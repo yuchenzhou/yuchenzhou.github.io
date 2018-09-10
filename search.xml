@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>Blog init</title>
+      <link href="/2018/09/10/Blog-init/"/>
+      <url>/2018/09/10/Blog-init/</url>
+      <content type="html"><![CDATA[<p>#test one</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2018/09/05/hello-world/"/>
       <url>/2018/09/05/hello-world/</url>
