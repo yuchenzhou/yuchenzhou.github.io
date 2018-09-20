@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-10T08:18:47.960Z</updated>
+  <updated>2018-09-20T09:16:12.031Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Blog init</title>
-    <link href="http://yoursite.com/2018/09/10/Blog-init/"/>
-    <id>http://yoursite.com/2018/09/10/Blog-init/</id>
-    <published>2018-09-10T07:53:25.000Z</published>
-    <updated>2018-09-10T08:18:47.960Z</updated>
+    <title>前端学习-3</title>
+    <link href="http://yoursite.com/2018/09/20/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-3/"/>
+    <id>http://yoursite.com/2018/09/20/前端学习-3/</id>
+    <published>2018-09-20T08:29:05.000Z</published>
+    <updated>2018-09-20T09:16:12.031Z</updated>
     
-    <content type="html"><![CDATA[<p>#test one</p>]]></content>
+    <content type="html"><![CDATA[<p>#HTTP状态码</p><p>##1XX:信息</p><p>###100 Continue：服务器仅接收到部分请求，但是一旦服务器并没有拒绝该请求，客户端应该继续发送其余的请求。</p><p>###101 Switching Protocols：服务器转换协议：服务器将遵从客户的请求转换到另外一种协议。</p><p>##2XX:成功</p><p>###200 OK：请求成功。</p><p>###201 Created：请求被创建完成，同时新的资源被创建。</p><p>###202 Accepted：供处理的请求已被接受，但是处理未完成。</p><p>###203 Non-authoritative Information：文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝。</p><p>###204 No Content：没有新文档。浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。</p><p>###205 Reset Content：没有新文档。但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容。</p><p>###206 Partial Content：客户发送了一个带有Range头的GET请求，服务器完成了它。</p><p>##3XX:重定向</p><p>###300 Multiple Choices：多重选择。链接列表。用户可以选择某链接到达目的地。最多允许五个地址。</p><p>###301 Moved Permanently：所请求的页面已经转移至新的url。</p><p>###302 Found：所请求的页面已经临时转移至新的url。</p><p>###303 See Other：所请求的页面可在别的url下被找到。</p><p>###304 Not Modified：未按预期修改文档。客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</p><p>###305 Use Proxy：客户请求的文档应该通过Location头所指明的代理服务器提取。</p><p>###306 Unused：此代码被用于前一版本。目前已不再使用，但是代码依然被保留。</p><p>###307 Temporary Redirect：被请求的页面已经临时移至新的url。</p><p>##4XX：客户端错误</p><p>###400 Bad Request：服务器未能理解请求。</p><p>###401 Unauthorized：被请求的页面需要用户名和密码。</p><p>###402 Payment Required：此代码尚无法使用。</p><p>###403 Forbidden：对被请求页面的访问被禁止。</p><p>###404 Not Found：服务器无法找到被请求的页面。</p><p>###405 Method Not Allowed：请求中指定的方法不被允许。</p><p>###406 Not Acceptable：服务器生成的响应无法被客户端所接受。</p><p>###407 Proxy Authentication Required：用户必须首先使用代理服务器进行验证，这样请求才会被处理。</p><p>###408 Request Timeout：    请求超出了服务器的等待时间。</p><p>###409 Conflict：由于冲突，请求无法被完成。</p><p>###410 Gone：被请求的页面不可用。</p><p>###411 Length Required：    “Content-Length” 未被定义。如果无此内容，服务器不会接受请求。</p><p>###412 Precondition Failed：    请求中的前提条件被服务器评估为失败。</p><p>###413 Request Entity Too Large：由于所请求的实体的太大，服务器不会接受请求。</p><p>###414 Request-url Too Long：由于url太长，服务器不会接受请求。当post请求被转换为带有很长的查询信息的get请求时，就会发生这种情况。</p><p>###415 Unsupported Media Type：由于媒介类型不被支持，服务器不会接受请求。</p><p>###416 Range Not Satisfiable：服务器不能满足客户在请求中指定的Range头。</p><p>###417 Expectation Failed：状态码表示客户端错误，意味着服务器无法满足 Expect 请求消息头中的期望条件。</p><p>###5XX：服务器错误</p><p>###500 Internal Server Error：请求未完成。服务器遇到不可预知的情况。</p><p>###501 Not Implemented：请求未完成。服务器不支持所请求的功能。</p><p>###502 Bad Gateway：请求未完成。服务器从上游服务器收到一个无效的响应。</p><p>###503 Service Unavailable：    请求未完成。服务器临时过载或当机。</p><p>###504 Gateway Timeout：网关超时。</p><p>###505 HTTP Version Not Supported：服务器不支持请求中指明的HTTP协议版本。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#test one&lt;/p&gt;
+        &lt;p&gt;#HTTP状态码&lt;/p&gt;
+&lt;p&gt;##1XX:信息&lt;/p&gt;
+&lt;p&gt;###100 Continue：服务器仅接收到部分请求，但是一旦服务器并没有拒绝该请求，客户端应该继续发送其余的请求。&lt;/p&gt;
+&lt;p&gt;###101 Switching Protocols：服务器转换协议：服务器
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端学习-2</title>
+    <link href="http://yoursite.com/2018/09/17/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-2/"/>
+    <id>http://yoursite.com/2018/09/17/前端学习-2/</id>
+    <published>2018-09-17T02:58:35.000Z</published>
+    <updated>2018-09-19T02:45:19.630Z</updated>
+    
+    <content type="html"><![CDATA[<p>###SPA(single page web application)，单页web应用</p><p>###</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###SPA(single page web application)，单页web应用&lt;/p&gt;
+&lt;p&gt;###&lt;/p&gt;
 
       
     
@@ -39,19 +64,20 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/05/hello-world/"/>
-    <id>http://yoursite.com/2018/09/05/hello-world/</id>
-    <published>2018-09-05T03:59:28.054Z</published>
-    <updated>2018-09-05T03:59:28.055Z</updated>
+    <title>前端学习-1</title>
+    <link href="http://yoursite.com/2018/09/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0-1/"/>
+    <id>http://yoursite.com/2018/09/14/前端学习-1/</id>
+    <published>2018-09-14T07:27:34.000Z</published>
+    <updated>2018-09-14T08:53:03.060Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>#浏览器多进程</p><h3 id="1-Browser进程和Render进程"><a href="#1-Browser进程和Render进程" class="headerlink" title="1.Browser进程和Render进程"></a>1.Browser进程和Render进程</h3><h6 id="Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与-销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理-网络资源（下载）"><a href="#Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与-销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理-网络资源（下载）" class="headerlink" title="Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与            销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理            网络资源（下载）"></a>Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与            销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理            网络资源（下载）</h6><h6 id="浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个-进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程："><a href="#浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个-进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程：" class="headerlink" title="浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个            进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程："></a>浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个            进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程：</h6><h6 id="GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和-RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程-执行时GUI渲染线程将会被挂起"><a href="#GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和-RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程-执行时GUI渲染线程将会被挂起" class="headerlink" title="GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和                    RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程                执行时GUI渲染线程将会被挂起"></a>GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和                    RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程                执行时GUI渲染线程将会被挂起</h6><h6 id="JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只-有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯"><a href="#JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只-有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯" class="headerlink" title="JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只                有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯"></a>JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只                有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯</h6><h6 id="事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如-SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被-触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由-于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理"><a href="#事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如-SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被-触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由-于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理" class="headerlink" title="事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如                    SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被                触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由                于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理"></a>事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如                    SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被                触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由                于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理</h6><h6 id="定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器-并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定-时；低于4ms时间间隔算作4ms"><a href="#定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器-并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定-时；低于4ms时间间隔算作4ms" class="headerlink" title="定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器                并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定                时；低于4ms时间间隔算作4ms"></a>定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器                并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定                时；低于4ms时间间隔算作4ms</h6><h6 id="异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程-请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态-变更事件，将这个回调再放入事件队列中，再由Js引擎执行"><a href="#异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程-请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态-变更事件，将这个回调再放入事件队列中，再由Js引擎执行" class="headerlink" title="异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程                请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态                变更事件，将这个回调再放入事件队列中，再由Js引擎执行"></a>异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程                请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态                变更事件，将这个回调再放入事件队列中，再由Js引擎执行</h6><h3 id="2-Browser进程和浏览器内核进程的通信进程"><a href="#2-Browser进程和浏览器内核进程的通信进程" class="headerlink" title="2.Browser进程和浏览器内核进程的通信进程"></a>2.Browser进程和浏览器内核进程的通信进程</h3><h6 id="Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过-RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释-后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；-Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来"><a href="#Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过-RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释-后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；-Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来" class="headerlink" title="Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过                RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释            后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；                Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来"></a>Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过                RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释            后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；                Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来</h6><h3 id="3-web-worker"><a href="#3-web-worker" class="headerlink" title="3.web worker"></a>3.web worker</h3><h6 id="worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务-而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象-e-g-Worker-运行一个命名的JavaScript文件；这个文件包含将在工作线程中运-行的代码-属于单页，创建一个新的线程来运行"><a href="#worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务-而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象-e-g-Worker-运行一个命名的JavaScript文件；这个文件包含将在工作线程中运-行的代码-属于单页，创建一个新的线程来运行" class="headerlink" title="worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务            而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象(e.g.                 Worker()) 运行一个命名的JavaScript文件；这个文件包含将在工作线程中运            行的代码;属于单页，创建一个新的线程来运行"></a>worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务            而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象(e.g.                 Worker()) 运行一个命名的JavaScript文件；这个文件包含将在工作线程中运            行的代码;属于单页，创建一个新的线程来运行</h6><h3 id="4-shared-worker"><a href="#4-shared-worker" class="headerlink" title="4.shared worker"></a>4.shared worker</h3><h6 id="多页共享；浏览器单独创建一个新线程"><a href="#多页共享；浏览器单独创建一个新线程" class="headerlink" title="多页共享；浏览器单独创建一个新线程"></a>多页共享；浏览器单独创建一个新线程</h6>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;#浏览器多进程&lt;/p&gt;
+&lt;h3 id=&quot;1-Browser进程和Render进程&quot;&gt;&lt;a href=&quot;#1-Browser进程和Render进程&quot; class=&quot;headerlink&quot; title=&quot;1.Browser进程和Render进程&quot;&gt;&lt;/a&gt;1.Browser进程
       
     
     </summary>

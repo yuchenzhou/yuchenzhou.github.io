@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>前端学习-1 | Hexo</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/">
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='/' >
+				<!-- <i class="fa fa-home"></i> -->
+				Hexo
+			</a>
+
+				<div class='menu'>
+					<ul class='h-list'>
+                        
+    						
+    							<li>
+    								<a class='nav-about flat-box' href='https://github.com/yuchenzhou/yuchenzhou.github.io'>
+    									<i class='fa fa-home fa-'></i>&nbsp;主页
+    								</a>
+    							</li>
+    						
+    							<li>
+    								<a class='nav-projects flat-box' href='https://github.com/yuchenzhou'>
+    									<i class='fa fa-cube fa-'></i>&nbsp;项目
+    								</a>
+    							</li>
+    						
+    							<li>
+    								<a class='nav-home flat-box' href='/'>
+    									<i class='fa fa-rss fa-'></i>&nbsp;博客
+    								</a>
+    							</li>
+    						
+    							<li>
+    								<a class='nav-archives flat-box' href='/archives'>
+    									<i class='fa fa-archive fa-'></i>&nbsp;归档
+    								</a>
+    							</li>
+    						
+        			 
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon"><i class="fa fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fa fa-search fa-fw" href='javascript:void(0)'></span></a></li>
+				
+				<li class='s-menu'><a class="fa fa-navicon fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				xaoxuu
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fa fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fa fa-arrow-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fa fa-list-ul fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+        <div class="header">Hexo</div>
+		<nav>
+            <ul>
+                
+                    
+                        <li>
+                            <a class='nav-about flat-box nav flat-box' href='https://github.com/yuchenzhou/yuchenzhou.github.io'><i class='fa fa-home fa-fw'></i>&nbsp;主页</a>
+                        </li>
+                    
+                        <li>
+                            <a class='nav-projects flat-box nav flat-box' href='https://github.com/yuchenzhou'><i class='fa fa-cube fa-fw'></i>&nbsp;项目</a>
+                        </li>
+                    
+                        <li>
+                            <a class='nav-home flat-box nav flat-box' href='/'><i class='fa fa-rss fa-fw'></i>&nbsp;博客</a>
+                        </li>
+                    
+                        <li>
+                            <a class='nav-archives flat-box nav flat-box' href='/archives'><i class='fa fa-archive fa-fw'></i>&nbsp;归档</a>
+                        </li>
+                    
+             
+            </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post-前端学习-1" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <section class='meta'>
+        <h1 class="title">
+            
+                前端学习-1
+            
+        </h1>
+        <time>
+            2018-09-14&nbsp;&nbsp;
+            <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </time>
+        
+    
+    <div class='cats'>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>#浏览器多进程</p>
+<h3 id="1-Browser进程和Render进程"><a href="#1-Browser进程和Render进程" class="headerlink" title="1.Browser进程和Render进程"></a>1.Browser进程和Render进程</h3><h6 id="Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与-销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理-网络资源（下载）"><a href="#Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与-销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理-网络资源（下载）" class="headerlink" title="Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与            销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理            网络资源（下载）"></a>Browser进程（主进程）负责浏览器界面显示（用户交互）、各页面管理（创建与            销毁其他进程）、将Render进程得到的内存中的bitmap绘制到用户界面上、管理            网络资源（下载）</h6><h6 id="浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个-进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程："><a href="#浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个-进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程：" class="headerlink" title="浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个            进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程："></a>浏览器渲染进程（浏览器内核（Render进程，多线程））：默认每个tab页面一个            进程，互不影响，负责页面渲染、脚本执行、事件处理。该进程包含多线程：</h6><h6 id="GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和-RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程-执行时GUI渲染线程将会被挂起"><a href="#GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和-RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程-执行时GUI渲染线程将会被挂起" class="headerlink" title="GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和                    RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程                执行时GUI渲染线程将会被挂起"></a>GUI渲染线程：负责界面渲染、解析HTML等资源文件、构建DOM树和                    RenderObject树、布局和绘制GUI渲染线程和JS引擎线程互斥、JS引擎线程                执行时GUI渲染线程将会被挂起</h6><h6 id="JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只-有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯"><a href="#JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只-有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯" class="headerlink" title="JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只                有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯"></a>JS引擎线程（JS内核）：负责处理JS脚本、解析JS运行代码、一个TAB页只                有一个JS线程在运行JS程序、JS执行过长容易导致页面渲染不连贯</h6><h6 id="事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如-SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被-触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由-于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理"><a href="#事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如-SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被-触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由-于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理" class="headerlink" title="事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如                    SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被                触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由                于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理"></a>事件触发线程：属于浏览器，用来控制事件循环；当JS执行代码块（如                    SetTimeOut时）会将对应任务添加到事件线程中；当对应的事件符合条件被                触发时，该线程会把事件添加到待处理队列的队尾，等待JS引擎的处理；由                于JS单线程的关系，所以这些处理队列的事件都得排队等待JS引擎处理</h6><h6 id="定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器-并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定-时；低于4ms时间间隔算作4ms"><a href="#定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器-并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定-时；低于4ms时间间隔算作4ms" class="headerlink" title="定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器                并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定                时；低于4ms时间间隔算作4ms"></a>定时触发线程：比如（SetTimeout和setInterval），浏览器定时计数器                并不是由JS引擎计数的，因为js引擎单线程；通过单独线程来计时并触发定                时；低于4ms时间间隔算作4ms</h6><h6 id="异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程-请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态-变更事件，将这个回调再放入事件队列中，再由Js引擎执行"><a href="#异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程-请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态-变更事件，将这个回调再放入事件队列中，再由Js引擎执行" class="headerlink" title="异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程                请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态                变更事件，将这个回调再放入事件队列中，再由Js引擎执行"></a>异步http请求线程：在XMLhHttpRequest连接后通过浏览器新开的一个线程                请求；将检测到状态变更时，如果没有设置回调函数，异步线程就产生状态                变更事件，将这个回调再放入事件队列中，再由Js引擎执行</h6><h3 id="2-Browser进程和浏览器内核进程的通信进程"><a href="#2-Browser进程和浏览器内核进程的通信进程" class="headerlink" title="2.Browser进程和浏览器内核进程的通信进程"></a>2.Browser进程和浏览器内核进程的通信进程</h3><h6 id="Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过-RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释-后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；-Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来"><a href="#Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过-RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释-后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；-Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来" class="headerlink" title="Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过                RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释            后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；                Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来"></a>Browser进程收到用户请求，首先需求获取页面内容，随后将该任务通过                RenderHost接口传递给Render进程；Render进程的Render接口收到消息，解释            后交给渲染线程，然后开始渲染；渲染线程接收请求，加载网页并渲染网页；                Render进程将结果传给Browser进程；Browser进程接收到结果并将结果绘制出来</h6><h3 id="3-web-worker"><a href="#3-web-worker" class="headerlink" title="3.web worker"></a>3.web worker</h3><h6 id="worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务-而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象-e-g-Worker-运行一个命名的JavaScript文件；这个文件包含将在工作线程中运-行的代码-属于单页，创建一个新的线程来运行"><a href="#worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务-而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象-e-g-Worker-运行一个命名的JavaScript文件；这个文件包含将在工作线程中运-行的代码-属于单页，创建一个新的线程来运行" class="headerlink" title="worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务            而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象(e.g.                 Worker()) 运行一个命名的JavaScript文件；这个文件包含将在工作线程中运            行的代码;属于单页，创建一个新的线程来运行"></a>worker为Web内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务            而不干扰用户界面；一个worker是使用一个构造函数创建的一个对象(e.g.                 Worker()) 运行一个命名的JavaScript文件；这个文件包含将在工作线程中运            行的代码;属于单页，创建一个新的线程来运行</h6><h3 id="4-shared-worker"><a href="#4-shared-worker" class="headerlink" title="4.shared worker"></a>4.shared worker</h3><h6 id="多页共享；浏览器单独创建一个新线程"><a href="#多页共享；浏览器单独创建一个新线程" class="headerlink" title="多页共享；浏览器单独创建一个新线程"></a>多页共享；浏览器单独创建一个新线程</h6>
+        </div>
+
+        
+            <div class="article-tags tags">
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev" >
+                        <span class="art-item-left">
+                            <h6><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
+                            <h4>
+                                <a href="/2018/09/17/前端学习-2/" rel="prev" title="前端学习-2">
+                                  
+                                      前端学习-2
+                                  
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
+                
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+
+            
+                
+
+    <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
+        <ul>
+            
+                <li><a href="http://yoursite.com/2018/09/20/前端学习-3/">前端学习-3</a></li>
+            
+                <li><a href="http://yoursite.com/2018/09/17/前端学习-2/">前端学习-2</a></li>
+            
+        </ul>
+    </div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+
+            
+
+            
+
+                
+
+                
+
+                
+            
+
+        </section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: '前端学习-1',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+    
+        
+    <section class='m_widget author'>
+        
+            <div class='header'>
+                <img class='avatar' src='https://avatars3.githubusercontent.com/u/25273328?s=400&amp;u=f53524ef24e5c6bcdf9fe9cc81bcbf0e15199718&amp;v=4' />
+            </div>
+        
+        <div class='content'>
+            
+                <h2>yuchenzhou</h2>
+            
+            
+                <div>
+                    让我翻下身子，这样容易熟
+                </div>
+            
+        </div>
+        
+            <div class="social-wrapper">
+              
+                
+                    <a href="mailto:1057433699@qq.com" class="social flat-box" target="_blank" rel="external"><i class="social fa fa-envelope" aria-hidden="true"></i></a>
+                
+              
+                
+                    <a href="https://github.com/yuchenzhou" class="social flat-box" target="_blank" rel="external"><i class="social fa fa-github" aria-hidden="true"></i></a>
+                
+              
+                
+              
+                
+              
+                
+                    <a href="https://twitter.com/yczhou369" class="social flat-box" target="_blank" rel="external"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
+                
+              
+                
+                    <a href="https://music.163.com/#/user/home?id=249164619" class="social flat-box" target="_blank" rel="external"><i class="social fa fa-music" aria-hidden="true"></i></a>
+                
+              
+                
+                    <a href="atom" class="social flat-box" target="_blank" rel="external"><i class="social fa fa-rss" aria-hidden="true"></i></a>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            </div>
+        
+    </section>
+
+
+    
+    
+        <section class='m_widget categories'>
+    <div class='header'><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;分类</div>
+    <div class='content'>
+        
+    </div>
+</section>
+
+    
+    
+        
+
+    
+    
+        <section class='m_widget music'>
+    <div class='header'><i class="fa fa-headphones fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;音乐</div>
+    <div class='content'>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=0&id=311055886&auto=0&height=450"></iframe>
+    </div>
+</section>
+
+    
+    
+    
+
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+        <div class="social-wrapper">
+          
+              
+                  <a href="mailto:1057433699@qq.com" class="social fa fa-envelope flat-box" target="_blank" rel="external"></a>
+              
+          
+              
+                  <a href="https://github.com/yuchenzhou" class="social fa fa-github flat-box" target="_blank" rel="external"></a>
+              
+          
+              
+          
+              
+          
+              
+                  <a href="https://twitter.com/yczhou369" class="social fa fa-twitter flat-box" target="_blank" rel="external"></a>
+              
+          
+              
+                  <a href="https://music.163.com/#/user/home?id=249164619" class="social fa fa-music flat-box" target="_blank" rel="external"></a>
+              
+          
+              
+                  <a href="atom" class="social fa fa-rss flat-box" target="_blank" rel="external"></a>
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        </div>
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://github.com/xaoxuu/hexo-theme-material-x" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/jquery.fitvids.js"></script>
+
+    <script>
+        var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+        var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+        var ALGOLIA_API_KEY = "";
+        var ALGOLIA_APP_ID = "";
+        var ALGOLIA_INDEX_NAME = "";
+        var AZURE_SERVICE_NAME = "";
+        var AZURE_INDEX_NAME = "";
+        var AZURE_QUERY_KEY = "";
+        var BAIDU_API_ID = "";
+        var SEARCH_SERVICE = "hexo" || "hexo";
+        var ROOT = "/"||"/";
+        if(!ROOT.endsWith('/'))ROOT += '/';
+    </script>
+
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+    
+    
+    
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
